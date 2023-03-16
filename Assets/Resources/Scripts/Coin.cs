@@ -32,6 +32,10 @@ public class Coin : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "building" || other.tag == "diamond")
+        {
+            Destroy(gameObject);
+        }
 
         // trigger coin pickup function if a helicopter collides with this
         other.transform.parent.GetComponent<HeliController>().AddToCoinTotal(1);

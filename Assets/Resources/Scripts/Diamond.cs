@@ -26,6 +26,11 @@ public class Diamond : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "building")
+        {
+            Destroy(gameObject);
+        }
+
         other.transform.parent.GetComponent<HeliController>().AddToCoinTotal(5);
         Destroy(gameObject);
     }

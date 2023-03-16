@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - diamond
+  - building
   layers:
   - Default
   - TransparentFX
