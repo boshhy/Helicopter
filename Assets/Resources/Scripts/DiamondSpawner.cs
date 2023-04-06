@@ -17,6 +17,7 @@ public class DiamondSpawner : MonoBehaviour
 
     }
 
+    // Spawn diamonds every 1-20 seconds
     IEnumerator SpawnDiamonds()
     {
         while (true)

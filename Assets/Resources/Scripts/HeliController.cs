@@ -65,6 +65,7 @@ public class HeliController : MonoBehaviour
         rb.velocity = new Vector3(horizontal, vertical, 0);
     }
 
+    // Add to coinTotal the amount passed into packUpValue
     public void AddToCoinTotal(int pickUpValue)
     {
         coinTotal += pickUpValue;
