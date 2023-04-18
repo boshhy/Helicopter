@@ -25,6 +25,8 @@ public class Skyscraper : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 
 		// trigger helicopter to explode when it collides with this
-		other.transform.parent.gameObject.GetComponent<HeliController>().Explode();
+		if (other.tag == "Player"){
+			other.transform.parent.gameObject.GetComponent<HeliController>().Explode();
+		}
 	}
 }

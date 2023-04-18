@@ -36,9 +36,10 @@ public class Coin : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        // trigger coin pickup function if a helicopter collides with this
-        other.transform.parent.GetComponent<HeliController>().AddToCoinTotal(1);
-        Destroy(gameObject);
+        if (other.tag == "Player" ) {
+            // trigger coin pickup function if a helicopter collides with this
+            other.transform.parent.GetComponent<HeliController>().AddToCoinTotal(1);
+            Destroy(gameObject);
+        }
     }
 }

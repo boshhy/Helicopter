@@ -34,9 +34,11 @@ public class Diamond : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.tag == "Player") {
 
-        // Add 5 points to player total if helicopter touched diamond
-        other.transform.parent.GetComponent<HeliController>().AddToCoinTotal(5);
-        Destroy(gameObject);
+            // Add 5 points to player total if helicopter touched diamond
+            other.transform.parent.GetComponent<HeliController>().AddToCoinTotal(5);
+            Destroy(gameObject);
+        }
     }
 }

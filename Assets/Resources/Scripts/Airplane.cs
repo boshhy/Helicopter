@@ -25,7 +25,9 @@ public class Airplane : MonoBehaviour {
 
 		// trigger helicopter's explode function via HeliController component
 		// and then destroy this airplane as well
-		other.transform.parent.gameObject.GetComponent<HeliController>().Explode();
-		Destroy(gameObject);
+		if (other.tag == "Player") {
+			other.transform.parent.gameObject.GetComponent<HeliController>().Explode();
+			Destroy(gameObject);
+		}
 	}
 }

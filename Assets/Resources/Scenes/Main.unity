@@ -88,7 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000001, guid: 4abefa3c82aeee5428ff0b8f56e754ee,
+  m_LightingDataAsset: {fileID: 112000000, guid: 4abefa3c82aeee5428ff0b8f56e754ee,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -213,6 +213,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1398133010673884, guid: 6286352776fdf4d6e9fa6c20b6485cb1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578828127867406, guid: 6286352776fdf4d6e9fa6c20b6485cb1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760344418258966, guid: 6286352776fdf4d6e9fa6c20b6485cb1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4947099641213742, guid: 6286352776fdf4d6e9fa6c20b6485cb1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.27
@@ -1085,7 +1097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d66f030202a56504191f5bd6e8b1f25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate10: 10
   prefabs:
   - {fileID: 7324045212216020175, guid: 54d9ecb861613fe45bb342f6a37b8f14, type: 3}
 --- !u!4 &1480618697
